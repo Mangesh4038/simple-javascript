@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+    <!-- <script type="text/javascript" src="/20UCS085/ex3.js"></script> -->
+
+    <input id="no1">
+    <br>
+    <br>
+    <input id="no2">
+    <br>
+    <br>
+    <input id="answer">
+    <br>
+    <br>
+
+    <button onclick="Add()">Addition</button>
+    <button onclick="sub()">Substraction</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <script>
+        
+        function Add() {
+            var a, b, c;
+            a = Number(document.getElementById("no1").value);
+            b = Number(document.getElementById("no2").value);
+            c = a + b;
+            document.getElementById("answer").value = c;
+        }
+
+        function sub() {
+            var a, b, c;
+            a = Number(document.getElementById("no1").value);
+            b = Number(document.getElementById("no2").value);
+            c = a - b;
+            document.getElementById("answer").value = c;
+        }
+
+        function multiply() {
+            var a, b, c;
+            a = Number(document.getElementById("no1").value);
+            b = Number(document.getElementById("no2").value);
+            c = a * b;
+            document.getElementById("answer").value = c;
+        }
+
+        function divide() {
+            var a, b, c;
+            a = Number(document.getElementById("no1").value);
+            b = Number(document.getElementById("no2").value);
+            c = a / b;
+            document.getElementById("answer").value = c;
+        }
+    </script>
+
+</body>
+
+</html>
